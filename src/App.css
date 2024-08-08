@@ -1,38 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("./prise.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
 .App {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  color: #fff;
+}
+
+.schedule {
+  width: 70%;
+  margin-right: 0;
+}
+
+.schedule-header {
+  background: rgb(0, 51, 204);
+  backdrop-filter: blur(10px);
+  padding: 0px;
+  border-radius: 0%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.schedule-header h1,
+.schedule-header h2 {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.schedule-header h1 {
+  margin: 0;
+  font-size: 34px;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.schedule-header h2 {
+  margin: 0;
+  font-size: 34px;
+  color: #03dbb2;
+}
+
+.schedule-body {
+  backdrop-filter: blur(0px);
+  padding: 0px;
+  border-radius: 0px;
+  border: none;
+}
+
+.schedule-item {
+  background: rgba(17, 17, 17, 0.5);
+  backdrop-filter: blur(0px);
+  margin-bottom: 0px;
+  padding: 20px;
+  border-radius: 0px;
+  text-align: left;
+}
+
+.schedule-title {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.event-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.right-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.schedule-item h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #03dbb2;
+}
+
+.location,
+.mainhall,
+.floor,
+.time {
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+}
+
+.mainhall {
+  display: flex;
+  align-items: center;
+}
+
+.floor {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.schedule-item sup {
+  font-size: 0.75em;
+  vertical-align: super;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.time .wib {
+  font-size: 14px; /* Smaller font size for WIB */
+}
+
+.event-poster {
+  width: 30%;
+  margin-left: 0;
+}
+
+.event-poster img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.trans-convention-center {
+  white-space: nowrap; /* Ensure the text doesn't wrap */
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
 }
